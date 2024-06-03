@@ -14,11 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = "<space>" -- Make sure to set `mapleader` before lazy so your mappings are correct
 vim.g.maplocalleader = "\\" -- Same for `maplocalleader`
 
-require("lazy").setup("plugins")
-
-vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox]])
-
 vim.cmd([[filetype plugin indent on]])
 vim.cmd([[syntax enable]])
 
@@ -46,3 +41,8 @@ vim.cmd([[nnoremap <Space>h <C-W><C-H>]])
 vim.cmd([[nnoremap <CR> :noh<CR><CR>]])
 
 vim.cmd([[set nowrap]])
+
+require("lazy").setup("plugins")
+
+vim.o.background = "dark" -- or "light" for light mode
+vim.cmd([[colorscheme gruvbox]])
