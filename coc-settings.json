@@ -1,0 +1,33 @@
+{
+  "eslint.autoFixOnSave": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "dart",
+    "go",
+    "javascript",
+    "javascriptreact",
+    "pgsql",
+    "py",
+    "python",
+    "sql",
+    "typescript",
+    "typescriptreact"
+  ],
+  "coc.preferences.organizeImportsOnSave": true,
+  "tsserver.formatOnType": true,
+  "coc.preferences.formatOnType": true,
+  "coc.source.vimtex.filetypes": ["tex", "latex"],
+  "java.project.referencedLibraries": ["./*"],
+  "python.pythonPath": "python",
+  "python.formatting.provider": "black",
+  "flutter.lsp.initialization.closingLabels": true,
+  "sql.database": "postgresql",
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/18.1.3/clangd_18.1.3/bin/clangd",
+  "Lua.workspace.library": [
+    "/usr/share/nvim/runtime"
+  ],
+  "markdownlint.config": {
+    "default": true,
+    "line_length": false
+  }
+}
