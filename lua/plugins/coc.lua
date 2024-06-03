@@ -65,10 +65,15 @@ end
 
 local opts = {silent = true, noremap = true, expr = true, replace_keycodes = false}
 
-keyset("n", "gd", "<Plug>(coc-definition)", opts)
-keyset("n", "gy", "<Plug>(coc-type-definition)", opts)
-keyset("n", "gi", "<Plug>(coc-implementation)", opts)
-keyset("n", "gr", "<Plug>(coc-references)", opts)
+-- keyset("n", "gd", "<Plug>(coc-definition)", opts)
+-- keyset("n", "gy", "<Plug>(coc-type-definition)", opts)
+-- keyset("n", "gi", "<Plug>(coc-implementation)", opts)
+-- keyset("n", "gr", "<Plug>(coc-references)", opts)
+
+vim.cmd([[nmap <silent> qd <Plug>(coc-definition)]])
+vim.cmd([[nmap <silent> qy <Plug>(coc-type-definition)]])
+vim.cmd([[nmap <silent> qi <Plug>(coc-implementation)]])
+vim.cmd([[nmap <silent> qr <Plug>(coc-references)]])
 
 -- Use K to show documentation in preview window
 function _G.show_docs()
@@ -91,15 +96,15 @@ vim.api.nvim_create_autocmd("CursorHold", {
     desc = "Highlight symbol under cursor on CursorHold"
 })
 
-keyset("n", "<leader>cr", "<Plug>(coc-rename)", opts)
+vim.cmd([[nmap <silent> <leader>cr <Plug>(coc-rename)]])
 
-keyset("n", "<leader>ca", "<Plug>(coc-codeaction-cursor)", opts)
+vim.cmd([[nmap <silent> <leader>ca <Plug>(coc-codeaction-cursor)]])
 
 -- Add `:Format` command to format current buffer
 vim.api.nvim_create_user_command("Format", "call CocAction('format')", {})
 
-keyset("n", "<Space>ep", "<Plug>(coc-diagnostic-prev)", opts)
-keyset("n", "<Space>en", "<Plug>(coc-diagnostic-next)", opts)
+vim.cmd([[nmap <silent> <Space>ep <Plug>(coc-diagnostic-prev)]])
+vim.cmd([[nmap <silent> <Space>en <Plug>(coc-diagnostic-next)]])
 
 vim.cmd([[nmap <silent> <Space>cr <Plug>(coc-rename)]])
 vim.cmd([[nmap <silent> <Space>cs <Plug>(coc-codeaction-cursor)]])
