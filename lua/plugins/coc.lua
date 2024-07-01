@@ -31,7 +31,7 @@ vim.g.coc_global_extensions = {
    'coc-json',
    'coc-kotlin',
    'coc-lua',
-   'coc-pyright',
+   'coc-basedpyright',
    'coc-qml',
    'coc-react-refactor',
    'coc-sh',
@@ -45,11 +45,11 @@ vim.g.coc_global_extensions = {
 local isdirectory = vim.fn.isdirectory
 
 if (isdirectory('./node_modules') ~= 0 and isdirectory('./node_modules/prettier')) then
-  vim.g.coc_global_extensions = vim.g.coc_global_extensions + {'coc-prettier'}
+  table.insert(vim.g.coc_global_extensions, 'coc-prettier')
 end
 
 if (isdirectory('./node_modules') ~= 0 and isdirectory('./node_modules/eslint')) then
-  vim.g.coc_global_extensions = vim.g.coc_global_extensions + {'coc-eslint'}
+  table.insert(vim.g.coc_global_extensions, 'coc-eslint')
 end
 
 
@@ -70,10 +70,10 @@ local opts = {silent = true, noremap = true, expr = true, replace_keycodes = fal
 -- keyset("n", "gi", "<Plug>(coc-implementation)", opts)
 -- keyset("n", "gr", "<Plug>(coc-references)", opts)
 
-vim.cmd([[nmap <silent> qd <Plug>(coc-definition)]])
-vim.cmd([[nmap <silent> qy <Plug>(coc-type-definition)]])
-vim.cmd([[nmap <silent> qi <Plug>(coc-implementation)]])
-vim.cmd([[nmap <silent> qr <Plug>(coc-references)]])
+vim.cmd([[nmap <silent> gd <Plug>(coc-definition)]])
+vim.cmd([[nmap <silent> gy <Plug>(coc-type-definition)]])
+vim.cmd([[nmap <silent> gi <Plug>(coc-implementation)]])
+vim.cmd([[nmap <silent> gr <Plug>(coc-references)]])
 
 -- Use K to show documentation in preview window
 function _G.show_docs()
