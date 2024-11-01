@@ -20,6 +20,7 @@ vim.opt.signcolumn = "yes"
 vim.g.coc_global_extensions = {
    '@yaegassy/coc-nginx',
    'coc-angular',
+   'coc-basedpyright',
    'coc-clangd',
    'coc-css',
    'coc-docker',
@@ -31,8 +32,8 @@ vim.g.coc_global_extensions = {
    'coc-json',
    'coc-kotlin',
    'coc-lua',
-   'coc-basedpyright',
    'coc-qml',
+   'coc-r-lsp',
    'coc-react-refactor',
    'coc-sh',
    'coc-sql',

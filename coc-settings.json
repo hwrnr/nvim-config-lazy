@@ -4,6 +4,7 @@
     "css",
     "dart",
     "go",
+    "java",
     "javascript",
     "javascriptreact",
     "pgsql",
@@ -11,7 +12,8 @@
     "python",
     "sql",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "*"
   ],
   "coc.preferences.organizeImportsOnSave": true,
   "tsserver.formatOnType": true,
