@@ -11,7 +11,7 @@
   "flutter.lsp.initialization.closingLabels": true,
   "sql.database": "postgresql",
   "prettier.printWidth": 150,
-  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/18.1.3/clangd_18.1.3/bin/clangd",
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/19.1.2/clangd_19.1.2/bin/clangd",
   "Lua.workspace.library": ["/usr/share/nvim/runtime"],
   "markdownlint.config": {
     "default": true,
