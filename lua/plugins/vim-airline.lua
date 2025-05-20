@@ -1,11 +1,12 @@
 local M = {
   "vim-airline/vim-airline",
   dependencies = { "vim-airline/vim-airline-themes" },
+  enabled = false,
 }
 
 M.config = function()
   if vim.g.airline_symbols == nil then
-    vim.g.airline_symbols = { }
+    vim.g.airline_symbols = {}
   end
 
   vim.cmd([[let g:airline#extensions#tabline#enabled = 1]])
