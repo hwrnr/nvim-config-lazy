@@ -38,6 +38,10 @@ vim.cmd([[nnoremap <Space>k <C-W><C-K>]])
 vim.cmd([[nnoremap <Space>l <C-W><C-L>]])
 vim.cmd([[nnoremap <Space>h <C-W><C-H>]])
 
+-- comment
+vim.cmd([[nnoremap <Space>cl :norm gcc<CR>]])
+vim.cmd([[xnoremap <Space>cl :norm gc<CR>]])
+
 vim.cmd([[nnoremap <CR> :noh<CR><CR>]])
 
 vim.cmd([[set nowrap]])

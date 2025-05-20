@@ -16,5 +16,11 @@
   "markdownlint.config": {
     "default": true,
     "line_length": false
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tsc": true,
+    "source.formatImports": true,
+    "editor.action.organizeImports": true
   }
 }

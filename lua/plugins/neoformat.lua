@@ -36,7 +36,7 @@ local M = {
     vim.g.neoformat_enabled_nix = { "nixfmt" }
   end,
   keys = {
-    { "<space>bf", "<cmd>Neoformat<CR>", { noremap = true, silent = true } },
+    { "<space>bf", "<cmd>Neoformat<CR>", desc = "Format current buffer (Neoformat)", { noremap = true, silent = true } },
   },
 }
 
