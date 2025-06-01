@@ -25,7 +25,8 @@ return {
       },
       tabline = {
         lualine_a = { 'buffers' },
-      }
+      },
+      extensions = { 'nerdtree', 'lazy' }
     }
   end,
 }
