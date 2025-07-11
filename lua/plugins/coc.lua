@@ -28,6 +28,7 @@ M.config = function()
     'coc-git',
     'coc-go',
     'coc-html',
+    'coc-markdownlint',
     'coc-metals',
     'coc-json',
     'coc-kotlin',
