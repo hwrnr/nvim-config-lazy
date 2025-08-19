@@ -19,6 +19,7 @@ M.config = function()
 
   vim.g.coc_global_extensions = {
     '@yaegassy/coc-nginx',
+    '@yaegassy/coc-tailwindcss3',
     'coc-angular',
     'coc-basedpyright',
     'coc-clangd',
