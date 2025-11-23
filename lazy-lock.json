@@ -1,5 +1,6 @@
 {
   "auto-dark-mode.nvim": { "branch": "master", "commit": "e300259ec777a40b4b9e3c8e6ade203e78d15881" },
+  "automkdir.nvim": { "branch": "main", "commit": "e36da288764cc41864dc5b4e1234f1425033ce59" },
   "bigfile.nvim": { "branch": "main", "commit": "33eb067e3d7029ac77e081cfe7c45361887a311a" },
   "coc-fzf": { "branch": "master", "commit": "6f19832e9e80ceacb98faac2688364b4f7a5b8e4" },
   "coc.nvim": { "branch": "release", "commit": "12a053dba1a9d822552f4de66706b59b541bf080" },
