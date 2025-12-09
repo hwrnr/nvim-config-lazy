@@ -32,7 +32,7 @@ M.config = function()
     'coc-git',
     'coc-go',
     'coc-html',
-    'coc-java',
+    -- 'coc-java',
     'coc-json',
     'coc-kotlin',
     'coc-lua',
