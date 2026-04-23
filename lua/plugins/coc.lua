@@ -3,6 +3,7 @@ local M = {
   branch = "release",
   build = "yarn install --frozen-lockfile",
   event = 'VeryLazy',
+  enabled = false
 }
 
 M.config = function()
