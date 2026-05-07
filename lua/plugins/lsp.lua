@@ -34,6 +34,12 @@ return {
 					"texlab",
 					"ts_ls",
 					"yamlls",
+					"cssls",
+					"emmet_ls",
+					"eslint",
+					"html",
+					"jsonls",
+					"tailwindcss",
 				},
 			})
 
