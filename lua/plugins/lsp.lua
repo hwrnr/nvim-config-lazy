@@ -61,7 +61,25 @@ return {
 			end
 
 			local servers = {
-				ts_ls = {},
+				ts_ls = {
+					settings = {
+						typescript = {
+							tsserver = {
+								-- Forces tsserver to check errors across all project files on startup
+								watchOptions = {
+									watchFile = "DynamicPriorityPolling",
+								},
+							},
+						},
+						javascript = {
+							tsserver = {
+								watchOptions = {
+									watchFile = "DynamicPriorityPolling",
+								},
+							},
+						},
+					},
+				},
 				html = {},
 				cssls = {},
 				jsonls = {},
@@ -70,7 +88,16 @@ return {
 				dockerls = {},
 				gopls = {},
 				clangd = {},
-				basedpyright = {},
+				basedpyright = {
+					settings = {
+						basedpyright = {
+							analysis = {
+								diagnosticMode = "workspace",
+								useLibraryCodeForTypes = true,
+							},
+						},
+					},
+				},
 				sqls = {},
 				tailwindcss = {},
 				eslint = {},
