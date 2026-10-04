@@ -12,7 +12,8 @@ local M = {
 				css = { "prettier" },
 				yaml = { "prettier" },
 				lua = { "stylua" },
-				["*"] = { "prettier" },
+				python = { "ruff_fix", "ruff_format" },
+				-- ["*"] = { "prettier" },
 			},
 		})
 

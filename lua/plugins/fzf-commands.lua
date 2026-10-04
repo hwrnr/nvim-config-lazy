@@ -63,9 +63,9 @@ return {
 			{
 				"<Space>cc",
 				function()
-					require("fzf-lua").commands()
+					require("fzf-lua").builtin()
 				end,
-				desc = "Command palette",
+				desc = "Fzf Lua menu",
 			},
 		},
 

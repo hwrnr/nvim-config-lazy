@@ -82,6 +82,7 @@ return {
 				},
 				html = {},
 				cssls = {},
+				emmet_ls = {},
 				jsonls = {},
 				yamlls = {},
 				bashls = {},
@@ -128,8 +129,6 @@ return {
 			"hrsh7th/cmp-nvim-lsp",
 			"hrsh7th/cmp-buffer",
 			"hrsh7th/cmp-path",
-			"L3MON4D3/LuaSnip",
-			"saadparwaiz1/cmp_luasnip",
 		},
 
 		config = function()
@@ -138,7 +137,7 @@ return {
 			cmp.setup({
 				snippet = {
 					expand = function(args)
-						require("luasnip").lsp_expand(args.body)
+						vim.snippet.expand(args.body)
 					end,
 				},
 
@@ -149,10 +148,18 @@ return {
 				}),
 
 				sources = {
-					{ name = "nvim_lsp" },
+					{
+						name = "nvim_lsp",
+						entry_filter = function(entry, ctx)
+							-- 15 is the internal LSP code for "Snippet"
+							if entry:get_kind() == 15 then
+								return false
+							end
+							return true
+						end,
+					},
 					{ name = "buffer" },
 					{ name = "path" },
-					{ name = "luasnip" },
 				},
 			})
 		end,
